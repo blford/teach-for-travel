@@ -1,0 +1,294 @@
+/* colors = Review Travel
+white: #EEF9F9 (238, 249, 249)
+dark blue: #01628C
+light blue: #00B0D2 (0, 176, 210)
+charcol: #333333
+green: #96C34C
+*/
+
+/* Font */
+@font-face {
+	font-family: 'Desdemona';
+	src: url('../font/Desdemona.woff') format('woff'), 
+		 url('../font/Desdemona.ttf') format('truetype');
+}
+
+/* Reset */
+
+* {
+	-moz-box-sizing: border-box;
+	     box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0 none;
+	outline: 0 none;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	background: none repeat scroll 0 0 transparent;
+	list-style: none;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+h1, h2, h3,
+h4, h5, h6 {
+	margin-bottom: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* ===== Global Styling ======================================== */
+
+html {
+	background-color: #EEF9F9;
+}
+
+body {
+	font-family: 'Capriola';
+	width: 100%;
+}
+
+.page-content-wrapper {
+	height: 100%;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.wrapper {
+	width: 960px;
+	margin: 0 auto;
+}
+
+.page-brand {
+	height: 630px;
+	background: #00B0D2 url("../img/phiphi-edit.jpg") center center no-repeat;
+	color: #EEF9F9;
+	max-width: 100%;
+	margin: auto;
+}
+
+.nav-top {
+	height: 80px;
+	position: relative;
+	z-index: 15;
+	background-color: #333333;
+	background-color: rgba(51, 51, 51, 0.8);
+	color: #EEF9F9;
+	-webkit-box-shadow: 4px 0 5px rgba(0,0,0,0.5);
+	-moz-box-shadow: 4px 0 5px rgba(0,0,0,0.5);
+	box-shadow: 4px 0 5px rgba(0,0,0,0.5);
+}
+
+#logo {
+	display: block;
+	float: left;
+	width: 255px;
+	margin: 20px 0 0 50px;
+	font-size: 36px;
+	text-transform: lowercase;
+}
+
+#logo a {
+	color: #EEF9F9;
+}
+
+#logo:hover {
+	opacity: 0.9;
+	cursor: pointer;
+}
+
+.nav-menu {
+	float: right;
+	padding-right: 30px;
+}
+
+.nav-menu-list {
+	display: block;
+	float: right;
+	list-style-type: none;
+}
+
+.nav-menu-item {
+	display: block;
+	float: left;
+	font-size: 16px;
+	letter-spacing: 1px;
+}
+
+.nav-menu-item a {
+	display: block;
+	color: #EEF9F9;
+	height: 80px;
+	padding: 30px 25px 10px 25px;
+	-webkit-transition: all, .15s ease-in-out;
+	-moz-transition: all, .15s ease-in-out;
+	-o-transition: all, .15s ease-in-out;
+	transition: all, .15s ease-in-out;
+}
+
+.nav-top a:hover {
+	background-color: #00B0D2;
+	color: #fff;
+}
+
+.page-brand h2 {
+	display: block;
+	text-align: center;
+	font-size: 42px;
+	padding-top: 160px;
+	text-transform: lowercase;
+}
+
+.page-brand span {
+	display: block;
+	padding-bottom: 10px;
+	font-size: 72px;
+	font-family: Desdemona;
+}
+
+/* Content */
+
+.featured-content {
+	padding: 70px 0;
+	height: 630px;
+}
+
+.section-header {
+	display: block;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 3em;
+	color: #333333;
+}
+
+.content-box-3 {
+	float: left;
+	width: 33.33%;
+	height: 300px;
+	background: #00B0D2;
+	background: url("../img/stockSkater.jpg");
+
+	background-clip: content-box;
+  	margin: 50px 0;
+  	padding: 0 20px;
+}
+
+.content-box-3:hover {
+/*	background: #96C34C;*/
+	background-clip: content-box;
+	opacity: 0.5;
+
+}
+
+.content-box-3 h2 {
+	display: block;
+	margin-top: 125px;
+	width: 100%;
+	line-height: 48px;
+	color: #333;
+	font-size: 24px;
+	background: rgb(238, 249, 249);
+	background: rgba(238, 249, 249, 0.7);
+	text-align: center;	
+}
+
+.article-spotlight {
+	padding: 70px 0 ;
+	border-top: 1px solid #333;
+}
+
+.content-box-5 {
+	float: left;
+	width: 20%;
+	height: 300px;
+	background: #00B0D2;
+
+	background-clip: content-box;
+  	margin: 50px 0;
+  	padding: 0 5px;
+  	overflow: hidden;
+}
+
+.content-box-5 img {
+	display: block;
+	width: 100%;
+}
+
+.card-text-header {
+	display: block;
+	text-transform: uppercase;
+	padding-bottom: 7px;
+}
+
+.card-text {
+	display: block;
+	padding: 10px 7px 0;
+}
+
+footer {
+	background: #333;
+}
+
+.footer-nav a {
+	color: #00B0D2;
+}
+
+.footer-nav a:first-child {
+	margin-left: 0;
+	padding-left: 0;
+}
+
+.footer-nav a:hover {
+	position: relative;
+	top: -5px;
+}
+
+.page-footer p {
+	padding-bottom: 50px;
+	font-size: 0.8em;
+	color: #EEF9F9;
+}
+
+
+/* clearfix */
+
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+
+
+
+

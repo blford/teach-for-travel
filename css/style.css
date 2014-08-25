@@ -1,0 +1,704 @@
+/* ================ Colors ================ */
+/* Color Scheme		Review Travel
+/* white			#EEF9F9 (238, 249, 249)
+/* dark blue 		#01628C
+/* light blue 		#00B0D2 (0, 176, 210)
+/* charcol			#333333
+/* green 			#96C34C
+/* ======================================== */
+
+/* ================ Fonts ================ */
+@font-face {
+	font-family: 'Aracne regular';
+	src: url('../font/Aracne_regular.otf') format('opentype'),
+		 url('../font/Aracne_regular.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Clarendon';
+	src: url('../font/ClarendonT-Medi.woff') format('woff'),
+		 url('../font/ClarendonT-Med.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'myriad-pro';
+	src: url('../font/MyriadPro-Regular.woff') format('woff'),
+		 url('../font/MyriadPro-Regular.ttf') format('truetype');
+}
+/* ======================================== */
+
+/* ================ Reset ================= */
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	     box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0 none;
+	outline: 0 none;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	background: none repeat scroll 0 0 transparent;
+	list-style: none;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+h1, h2, h3,
+h4, h5, h6 {
+	margin-bottom: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #EEF9F9;
+}
+
+/* ======================================== */
+
+/* =========== Global Styling ============= */
+
+body {
+	width: 100%;
+	font-family: 'montserrat', 'myriad-pro', sans-serif;
+	background: #EEF9F9 url("../img/bg-texture.png") top left repeat;
+	-webkit-font-smoothing: antialiased;
+}
+
+.page-wrap {
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.wrapper {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+
+}
+
+.content-button a {
+	display: block;
+	width: 130px;
+	padding: 8px;
+	line-height: 1em;
+	text-align: center;
+	background: #00B0D2;
+	color: #EEF9F9;
+	font: normal 1em 'myriad-pro', 'montserrat', 'sans-serif';
+	-webkit-font-smoothing: antialiased;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.logoText {
+	background: #333;
+	padding: 7px;
+	border-radius: 7px;
+}
+
+.logo-teach {
+	display: inline-block;
+	color: #96C34C;
+	/*color: #01628C;*/
+	/*color: #00B0D2;*/
+	font-family: Clarendon;
+	-webkit-font-smoothing: antialiased;
+	text-transform: lowercase;
+	letter-spacing: .5px;
+	font-weight: bold;
+}
+
+.logo-for {
+	display: inline-block;
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+	vertical-align: 8px;
+	color: #EEF9F9;
+	font-family: 'montserrat';
+	-webkit-font-smoothing: antialiased;
+	font-size: 0.5em;
+	margin: 0 -20px;
+}
+
+.logo-travel {
+	display: inline-block;
+	color: #00B0D2;
+	font-family: "Aracne regular";
+	-webkit-font-smoothing: antialiased;
+}
+
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.fixed {
+	position: fixed;
+}
+
+/* ======================================== */
+
+/* =============== Header ================= */
+
+.site-header {
+	height: 60px;
+	position: relative;
+	z-index: 15;
+	background-color: #333333;
+	background-color: rgba(51, 51, 51, 0.9);
+	-webkit-box-shadow: 4px 0 5px rgba(0,0,0,0.5);
+	-moz-box-shadow: 4px 0 5px rgba(0,0,0,0.5);
+	box-shadow: 4px 0 5px rgba(0,0,0,0.5);
+}
+
+#logo {
+	display: block;
+	float: left;
+	/*width: 200px;*/
+}
+
+#logo:hover {
+	opacity: 0.8;
+	cursor: pointer;
+}
+
+.nav-menu {
+	float: right;
+	padding-right: 1rem;
+}
+
+.nav-menu-list {
+	display: block;
+	height: 0;
+	overflow: visible;
+}
+
+.nav-menu-item {
+	display: block;
+	float: left;
+	font-size: 0.9em;
+	letter-spacing: 1px;
+}
+
+.nav-menu-item > a {
+	display: block;
+	color: #EEF9F9;
+	line-height: 20px;
+	text-align: center;
+	padding: 20px 15px 20px;
+	-webkit-transition: all, .15s ease-in-out;
+	-moz-transition: all, .15s ease-in-out;
+	-o-transition: all, .15s ease-in-out;
+	transition: all, .15s ease-in-out;
+}
+
+.nav-menu-list a:hover,
+.sublist li:hover {
+	background-color: #00B0D2;
+	color: #fff;
+}
+
+.sublist {
+	position: absolute;
+	z-index: 100;
+	color: #EEF9F9;
+	background-color: #333333;
+	background-color: rgba(51, 51, 51, 0.9);
+	font-size: .95em;
+}
+
+.sublist li {
+	text-align: left;
+	width: 160px;
+}
+
+.sublist a {
+	display: block;
+	padding: 15px 10px;
+	box-shadow: 3px 2px 4px #000;
+}
+
+.nav-icon,
+.nav-icon:before,
+.nav-icon:after {
+	content: "";
+	position: absolute;
+	right: 2em;
+	width: 2em;
+	height: 0.5em;
+	border-top: 0.25em solid #00B0D2;
+}
+
+.nav-icon {
+	display:none;
+	top:0.75em;
+	margin-top: 0.5em;
+}
+
+.nav-icon:before {
+	top:0.25em;
+	right:0;
+}
+.nav-icon:after {
+	top:0.75em;
+	right:0;
+}
+
+.nav-icon:hover,
+.nav-icon:hover:before,
+.nav-icon:hover:after {
+	border-top: 0.25em solid #EEF9F9;
+}
+
+.hero-unit {
+	padding: 60px 10px;
+	margin-top: -80px;
+	max-width: 100%;
+	line-height: 30px;
+	color: #EEF9F9;
+	background: #00B0D2;
+	background: url("../img/phiphi-edit.jpg") no-repeat;
+	background-position: top center;
+	background-attachment: scroll;
+/*	background-size: cover;*/
+	-webkit-filter: grayscale(30%);
+	height: 700px;
+/*	padding-bottom: 15%; /* matain aspect ratio of image */
+	-webkit-box-shadow: 4px 0 15px rgba(0,0,0,0.9);
+	-moz-box-shadow: 4px 0 15px rgba(0,0,0,0.9);
+	box-shadow: 4px 0 15px rgba(0,0,0,0.9);
+}
+
+.hero-unit .wrapper {
+	width: 100%;
+	padding-top: 200px;
+	text-align: center;
+}
+
+.hero-unit p {
+	display: block;
+	text-align: center;
+	font: 400 normal 3em 'myriad-pro', 'sans-serif';
+	-webkit-font-smoothing: antialiased;
+	width: 90%;
+	margin: 0 auto;
+	/*background: rgba(0, 176, 210, .8);*/
+	border-radius: 4px
+}
+
+.topic {
+	display: inline-block;
+	width: 230px;
+	padding-left: 10px;
+	font-size: 1.4em;
+	font-family: 'Aracne regular', 'montserrat', 'myriad-pro', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	vertical-align: central;
+	text-align: center;
+}
+
+/* ======================================== */
+
+/* ========== Featured Content ============ */
+
+.sliding-image {
+	height: 400px;
+	width: 100%;
+	background: #fff url("../img/rock-climber.jpg") no-repeat center center;
+	background-attachment: fixed;
+	margin-bottom: 2em;
+}
+
+.page-section {
+	padding: 70px 0 50px;
+}
+
+.page-section:first-of-type {
+	border-top: none;
+}
+
+.section-header {
+	padding: 0 1em 2em;
+}
+
+.section-header h3 {
+	display: block;
+	width: 100%;
+	margin: 0 auto;
+	padding-bottom: 0.5em;
+	font: 400 2.5rem 'montserrat', 'Aracne regular', 'myriad-pro', 'sans-serif';
+	-webkit-font-smoothing: antialiased;
+	letter-spacing: 2px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #00B0D2;
+}
+
+.section-header p {
+	line-height: 1.5em;
+	font-size: 1.5em;
+	text-align: center;
+}
+
+.feature-content {
+	padding: 2em 0.5em 1em;
+	overflow: hidden;
+}
+
+.feature-content > h3 {
+	font: 400 1.5em "Aracne regular";
+	-webkit-font-smoothing: antialiased;
+	color: #01628C;
+	letter-spacing: 1.5px;
+	margin-top: 1.5em;
+}
+
+.feature-content > p {
+	padding: 1em 0;
+	font-size: 1.1em;
+	line-height: 1.5em;
+}
+
+.inline-link{
+	color: #00B0D2;
+}
+
+.inline-link:hover {
+	text-decoration: underline;
+
+}
+
+.content-box-3 {
+	position: relative;
+	/*float: left;*/
+	width: 33.33%;
+	height: 250px;
+	background: url("http://lorempixel.com/400/300") no-repeat center center;
+
+	background-clip: content-box;
+  	padding: 0 15px;
+  	overflow: hidden;
+  	clear: both;
+}
+
+.caption {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 0 1em;
+	background: url("../img/trans-black-50.png");
+	background: rgba(51, 51, 51, 0.8);
+	background-clip: content-box;
+	max-width: 100%;
+	height: 100%;
+}
+
+.caption h2,
+.caption p {
+	color: #EEF9F9;
+}
+
+.caption h2 {
+	font: 400 1.7em "Aracne regular";
+	margin: 1em 0.8em 0;
+	padding-bottom: 0.3em;
+	border-bottom: 1px dotted #fff;
+}
+
+.caption p {
+	font-size: 1em;
+	line-height: 1.5;
+	margin: 0 1.5em 1.2em;
+	padding-top: 0.9em;
+}
+
+.content-button a:hover {
+	background: #EEF9F9;
+	color: #00B0D2;
+}
+
+.content-box-5 {
+	float: left;
+	width: 20%;
+	height: 300px;
+	background: #00B0D2;
+
+	background-clip: content-box;
+  	margin: 50px 0;
+  	padding: 0 5px;
+  	overflow: hidden;
+}
+
+.content-box-5 img {
+	display: block;
+	width: 100%;
+}
+
+.card-text-header {
+	display: block;
+	text-transform: uppercase;
+	padding-bottom: 7px;
+}
+
+.card-text {
+	display: block;
+	padding: 10px 7px 0;
+}
+
+/* ======================================== */
+
+/* ============= Country Page Content ============= */
+
+.content-container {
+	margin: 1.5em auto;
+	max-width: 1200px;
+}
+
+.content-container a {
+	color: #333;
+	text-decoration: underline;
+}
+
+.page-content {
+	float: right;
+	width: 79%;
+	margin-right: 0.5%;
+}
+
+.page-content section {
+	padding-top: 2em;
+}
+
+.page-content section:last-of-type {
+	padding-bottom: 2em;
+}
+
+.image-header-3 img {
+	float: left;
+	width: 33.33%;
+	height: 150px;
+	-webkit-filter: grayscale(40%);
+}
+
+section[class^='country-page-'] h2 {
+	font-size: 2em;
+	font-family: 'Aracne regular';
+	padding-bottom: 0.5em;
+}
+
+.country-page-sidebar {
+	float: left;
+	width: 18%;
+	margin-left: 0.5%;
+}
+
+.country-page-title {
+	padding: 0 0 0.8em .1em;
+	text-align: left;
+}
+
+.country-page-title h1 {
+	font: 400 3em 'Aracne regular';
+	line-height: 1em;
+	color: #00B0D2;
+	padding-bottom: 0.3em;
+}
+
+.country-page-title small {
+	color: #333;
+	font: 400 0.9em 'myriad-pro', 'montserrat', 'sans-serif';
+}
+
+.country-page-nav {
+	padding-top: 2em;
+}
+
+
+/* ======================================== */
+
+/* ================ Footer ================ */
+
+footer {
+	background: #333333;
+	color: #00B0D2;
+	padding: 20px 30px 30px;
+	font-size: 0.9rem;
+	overflow: hidden;
+}
+
+.footer-header {
+	display: block;
+	font: 400 1.2em 'Aracne regular';
+	letter-spacing: 1.3px;
+	margin-bottom: 10px;
+}
+
+.footer-column {
+	width: 15.6%; 
+	margin: 0 .75%; 
+	padding: 2%; 
+	float: left;
+}
+
+.page-footer a:hover {
+	color: #fff;
+}
+
+.subscribe {
+	width: 47%; 
+	margin: 40px .75% 0; 
+	padding: 2%; 
+	float: left; 
+	text-align: center;
+}
+
+.subscribe h3 {
+	font: 400 1.2em 'Aracne regular';
+	padding-bottom: 5px;
+	letter-spacing: 1.1px;
+}
+
+.subscribe form {
+	margin-top: 15px;
+}
+
+.email {
+	height: 2em;
+	width: 15em;
+	max-width: 100%;
+	font: normal 1em 'myriad-pro', 'montserrat', 'open sans';
+	background: #EEF9F9;
+	border: 0;
+	padding-left: .5em;
+	border-radius: 5px;
+	box-shadow: inset 0.2em 0.2em 0.25em rgba(0, 0, 0, 0.3);
+	vertical-align: middle;
+}
+
+::-webkit-input-placeholder {
+	padding: .1em 0 .1em .1em;
+}
+
+:-moz-placeholder {
+	padding: .1em 0 .1em .1em;
+}
+
+#email input[type="submit"] {
+	background: #00B0D2;
+	color: #333333;
+	border: 0;
+	border-radius: 5px;
+	font: 600 1em 'myriad-pro', 'montserrat', 'open sans';
+	margin: 0 0 0 -2px;
+	line-height: 1em;
+	padding: .5em;
+	vertical-align: middle;
+}
+
+#email input[type="submit"]:hover {
+	background-color: #00B0D2;
+	color: #fff;
+	cursor: pointer;
+}
+
+.page-footer li {
+	margin: 5px 0;
+}
+
+.page-footer a {
+	color: #00B0D2;
+}
+
+.copywrite {
+	clear: left;
+	font-size: 0.8em;
+	color: #EEF9F9;
+	padding-top: 30px;
+	text-align: center;
+}
+
+/* ======================================== */
+
+@media screen and (max-width: 910px) {
+	.nav-icon { 
+		display:block;
+	}
+	.nav-menu {
+		position: relative;
+		/*visibility: hidden;*/
+		display: none;
+	}
+	.nav-menu-list {
+		margin: 60px 10px;
+		position: absolute;
+		left: -150px;
+	}
+	.nav-menu-item {
+		float: none;
+	}
+	.nav-menu-item > a {
+		text-align: right;
+		padding: 10px 15px 10px 0;
+		width: 10em;
+		background: rgba(51, 51, 51, 0.9);
+		-webkit-box-shadow: 4px 3px 4px #000;
+		-moz-box-shadow: 4px 3px 4px #000;
+		box-shadow: 4px 3px 4px #000;
+	}
+	.nav-menu-item > a:last-child {
+		border-radius: 0 0 10px 10px;
+	}
+	.sublist {
+		position: absolute;
+		left: -10.5em;
+		margin-top: -3em;
+	}
+	.sublist li {
+		text-align: right;
+		width: 10.5em;
+	}
+	.sublist a {
+		padding: 10px 15px 10px 0;
+	}
+}
